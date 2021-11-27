@@ -11,7 +11,7 @@ I'm 22 years old. I have 2 years of experience in HTML/CSS coding (Basic JavaScr
 * HTML, CSS, BEM, Gulp (Advanced)
 * JavaScript ES6+ (Intermediate)
 * React (Basic)
-* Git (Basic)
+* Git (Github)
 
 ## __Code example:__
 ```
