@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Summary</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- /Fonts -->
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- /Main styles -->
+
+    <!-- Libs -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Normalize -->
+
+    <!-- Highlight with prism.js -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css" rel="stylesheet" />
+    <!-- /Highlight with prism.js -->
+    <!-- /Libs -->
+
+</head>
+<body>
+    <div class="content">
+
+        <!-- Header -->
+        <header class="header">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li><a href="#hero">About me</a></li>
+                    <li><a href="#code">Code example</a></li>
+                    <li><a href="#experience">Work experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#english">English</a></li>
+                </ul>
+                <div class="header__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <!-- Header -->
+
+        <!-- Main content -->
+        <main>
+            <!-- Head section -->
+            <section class="hero">
+                <div class="anchor-spacer" id="hero"></div>
+                <h1>Nikolay Masliy</h1>
+                <div class="content__item row">
+                    <div class="row__item row__text">
+                        <!-- About -->
+                        <div class="content__item">
+                            <h2>About me</h2>
+                            <p>
+                                I'm 22 years old. I have 2 years of experience in HTML/CSS coding (Basic JavaScript, Jquery).
+                            </p>
+                            <p>
+                                Nowadays, i focused on improving Javascript and React skills to become a Frontend developer. 
+                            </p>
+                        </div>
+                        <!-- /About -->
+                        <!-- Contacts -->
+                        <div class="row row--spacing">
+                            <div class="content__item row__item row__item--50">
+                                <h3>Contacts</h3>
+                                <ul>
+                                    <li>github: <a href="https://github.com/nmasliy" rel="noopener noreferrer" target="_blank">@nmasliy</a></li>
+                                    <li>email: <a href="mailto:nikolaymasliy76@gmail.com" rel="noopener noreferrer" target="_blank">nikolaymasliy76@gmail.com</a></li>
+                                    <li>telegram: <a href="https://t.me/nmasliy" rel="noopener noreferrer" target="_blank">@nmasliy</a></li>
+                                </ul>
+                            </div>
+                            <!-- Skills -->
+                            <div class="content__item row__item row__item--50">
+                                <h3>Skills</h3>
+                                <ul>
+                                    <li>HTML, CSS, BEM, Gulp (<i>Advanced</i>)</li>
+                                    <li>JavaScript ES6+ (<i>Basic</i>)</li>
+                                    <li>React (<i>Basic</i>)</li>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+                        <!-- /Skills -->
+                        </div>
+                        <!-- /Contacts -->
+                    </div>
+                    <div class="row__item row__img">
+                        <picture>
+                            <source srcset="assets/images/avatar.webp" type="image/webp">
+                            <img width="250" class="content__img" src="assets/images/avatar.jpg" alt="Nikolay Masliy">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <!-- /Head section -->
+
+            <!-- Code example -->
+            <section class="code">
+                <div class="anchor-spacer" id="code"></div>
+                <div class="content__item">
+                    <h3>Code example:</h3>
+                    <pre>
+        <code class="language-javascript">
+export const initializeApp = () => {
+    const defaultCity = 'London';
+
+    return (dispatch) => {
+        const cities = JSON.parse(window.localStorage.getItem('cities')) || null;
+
+        if (cities) {
+            cities.forEach(item => {
+                dispatch(addCity(item.name));
+            });
+            dispatch(pickCity(cities[0].name))
+                .then(() => {
+                    dispatch(initializingSuccess());
+                });
+        }
+        else API.getUserCity()
+            .then(city => dispatch(initializeCity(city)))
+            .catch(() => dispatch(initializeCity(defaultCity)))
+    }
+};
+        </code>
+                    </pre>
+                    <div>
+                        <h5>Code from 
+                            <a href="https://nmasliy.github.io/react-weather-app/" rel="noopener noreferrer" target="_blank">React weather application</a>
+                        </h5>
+                    </div>
+                </div>
+            </section>
+            <!-- /Code example -->
+
+            <!-- Experience -->
+            <section class="experience">
+                <div class="anchor-spacer" id="experience"></div>
+                <div class="content__item">
+                    <h3>Work experience:</h3>
+                    <p>
+                        >1 year HTML/CSS coding on freelance and work with a regular customer.
+                    </p>
+                </div>
+            </section>
+            <!-- /Experience -->
+
+            <!-- Education -->
+            <section class="education">
+                <div class="anchor-spacer" id="education"></div>
+                <div class="content__item">
+                    <h3>Education</h3>
+                    <p>
+                        I graduated from college as a software technician. Now I am a 3rd year student at the university in a similar profession. The basis of my knowledge is made up of videos on YouTube and free courses.
+                    </p>
+                    <h4>Self-education</h4>
+                    <p>
+                        I learn React for 2 months on this youtube course(contains 100 lessons:) <a href="https://www.youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8" rel="noopener noreferrer" target="_blank">React-Samurai</a>. 
+                    </p>
+                    <p>
+                        After 2 months learning React i start practice and create <a href="https://github.com/nmasliy/react-weather-app" rel="noopener noreferrer" target="_blank">weather application</a>.
+                    </p>
+                    <p>
+                        I finished this course and continue learning React on other resources.
+                    </p>
+                    <p>
+                        Besides the framework itself, i learned to work with server(AJAX), promises and other things, which i didn't understand before. I found out about project's architecture and other fundamental things.
+                    </p>
+                </div>
+            </section>
+            <!-- /Education -->
+
+            <!-- English -->
+            <section class="english">
+                <div class="content__item">
+                    <div class="anchor-spacer" id="english"></div>
+                    <h3>English</h3>
+                    <p>
+                        My english level is about Pre-Intermediate <i>(A2)</i>.
+                    </p>
+                    <p>
+                        I try to google, read documentation and use applications only in English
+                    </p>
+                </div>
+            </section>
+            <!-- /English -->
+        </main>
+        <!-- /Main content -->
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="row footer__content">
+                <a class="footer__link" href="https://github.com/nmasliy" rel="noopener noreferrer" target="_blank">
+                    <img src="assets/images/github.svg" alt="Github">
+                    <span>nmasliy</span>
+                </a>
+                <div class="footer__date">2021</div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+    </div>
+
+    <!-- Main scripts -->
+    <script src="assets/js/app.js"></script>
+    <!-- /Main scripts -->
+
+    <!-- Libs -->
+    <!-- Highlight with prism.js -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.min.js"></script>
+    <!-- /Highlight with prism.js -->
+    <!-- /Libs -->
+
+</body>
+</html>
