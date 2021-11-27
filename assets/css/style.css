@@ -235,7 +235,7 @@ section {
         height: 2px;
         flex-shrink: 0;
         border-radius: 2px;
-        background-color: rgb(27, 163, 204);
+        background-color: #000;
         transition: .3s ease-in;
         transform-origin: top left;
     }
@@ -294,9 +294,27 @@ section {
         display: block;
         padding: 20px 10px;
         margin: 0;
-        background-color: #c9d9fa;
+        background-color: #cec9fa;
+        color: #000;
         border-radius: 15px;
     }
     
     /* /Menu */
+}
+
+@media screen and (max-width: 465px) {
+    h1, h2 {
+        text-align: center;
+    }
+    .hero__item {
+        flex-direction: column-reverse;
+    }
+    .hero__item p {
+        text-align: center;
+    }
+    .row__img {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }

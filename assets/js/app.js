@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Listeners
         $headerBtn.addEventListener('click', toggleMenu);
         $navigationItems.forEach(item => item.addEventListener('click', toggleMenu));
+    } else {
+        window.addEventListener('resize', function() {
+            if (window.innerWidth <= 768) {
+                $headerBtn.addEventListener('click', toggleMenu);
+                $navigationItems.forEach(item => item.addEventListener('click', toggleMenu));
+            }
+        })
     }
 
 })

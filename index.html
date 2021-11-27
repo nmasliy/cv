@@ -56,7 +56,7 @@
             <section class="hero">
                 <div class="anchor-spacer" id="hero"></div>
                 <h1>Nikolay Masliy</h1>
-                <div class="content__item row">
+                <div class="content__item row hero__item">
                     <div class="row__item row__text">
                         <!-- About -->
                         <div class="content__item">
@@ -65,7 +65,7 @@
                                 I'm 22 years old. I have 2 years of experience in HTML/CSS coding (Basic JavaScript, Jquery).
                             </p>
                             <p>
-                                Nowadays, i focused on improving Javascript and React skills to become a Frontend developer. 
+                                Nowadays, i focused on improving Javascript and React skills to become a good Frontend developer. 
                             </p>
                         </div>
                         <!-- /About -->
@@ -84,7 +84,7 @@
                                 <h3>Skills</h3>
                                 <ul>
                                     <li>HTML, CSS, BEM, Gulp (<i>Advanced</i>)</li>
-                                    <li>JavaScript ES6+ (<i>Basic</i>)</li>
+                                    <li>JavaScript ES6+ (<i>Intermediate</i>)</li>
                                     <li>React (<i>Basic</i>)</li>
                                     <li>Git</li>
                                 </ul>
@@ -95,7 +95,9 @@
                     </div>
                     <div class="row__item row__img">
                         <picture>
-                            <source srcset="assets/images/avatar.webp" type="image/webp">
+                            <source srcset="assets/images/avatar.webp" media="(min-width:466px)" type="image/webp">
+                            <source srcset="assets/images/avatar-mob.webp" media="(max-width:465px)" type="image/webp">
+                            <source srcset="assets/images/avatar-mob.jpg" media="(max-width:465px)">
                             <img width="250" class="content__img" src="assets/images/avatar.jpg" alt="Nikolay Masliy">
                         </picture>
                     </div>
