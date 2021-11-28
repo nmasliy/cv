@@ -96,6 +96,10 @@ section {
     margin: 0 20px;
 }
 
+.navigation__list a.active {
+    color:rgb(34, 60, 80);
+}
+
 .content .language-javascript {
     font-size: 0.9em;
 }
@@ -240,16 +244,6 @@ section {
         transform-origin: top left;
     }
 
-    .header__btn.active span:nth-child(2) {
-        opacity: 0;
-    }
-    .header__btn.active span:first-child {
-        transform: rotate(45deg) translateY(-2px);
-    }
-    .header__btn.active span:last-child {
-        transform: rotate(-45deg);
-    }
-
     .navigation {
         display: flex;
         align-items: center;
@@ -265,6 +259,16 @@ section {
     .header.active {
         height: 100vh;
         background-color: #fff;
+    }
+
+    .header.active .header__btn span:nth-child(2) {
+        opacity: 0;
+    }
+    .header.active .header__btn span:first-child {
+        transform: rotate(45deg) translateY(-2px);
+    }
+    .header.active .header__btn span:last-child {
+        transform: rotate(-45deg);
     }
     
     .header.active .navigation {
