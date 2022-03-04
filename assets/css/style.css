@@ -302,6 +302,9 @@ section {
         color: #000;
         border-radius: 15px;
     }
+    .header.active .navigation__list a + a {
+        margin-top: 15px;
+    }
     
     /* /Menu */
 }
