@@ -1,250 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Резюме</title>
+  <title>Резюме</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- /Fonts -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- /Fonts -->
 
-    <!-- Main styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- /Main styles -->
+  <!-- Main styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- /Main styles -->
 
-    <!-- Libs -->
-    <!-- Normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!-- Normalize -->
+  <!-- Libs -->
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <!-- Normalize -->
 
-    <!-- Highlight with prism.js -->
-    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css" rel="stylesheet" />
-    <!-- /Highlight with prism.js -->
-    <!-- /Libs -->
-
+  <!-- Highlight with prism.js -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css" rel="stylesheet" />
+  <!-- /Highlight with prism.js -->
+  <!-- /Libs -->
 </head>
+
 <body>
-    <div class="content">
+  <div class="content">
+    <!-- Header -->
+    <header class="header">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li><a href="#hero">Обо мне</a></li>
+          <li><a href="#code">Пример кода</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#education">Образование</a></li>
+          <li><a href="#english">Английский</a></li>
+          <li>
+            <a href="index.html">EN</a>
+            <a href="index-ru.html" class="active">RU</a>
+          </li>
+        </ul>
+        <div class="header__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <!-- /Header -->
 
-        <!-- Header -->
-        <header class="header">
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li><a href="#hero">Обо мне</a></li>
-                    <li><a href="#code">Пример кода</a></li>
-                    <li><a href="#experience">Опыт</a></li>
-                    <li><a href="#education">Образование</a></li>
-                    <li><a href="#english">Английский</a></li>
-                    <li>
-                        <a href="index.html">EN</a>
-                        <a href="index-ru.html" class="active">RU</a>
-                    </li>
+    <!-- Main content -->
+    <main>
+      <!-- Head section -->
+      <section class="hero">
+        <div class="anchor-spacer" id="hero"></div>
+        <h1>Николай Маслий</h1>
+        <div class="content__item row hero__item">
+          <div class="row__item row__text">
+            <!-- About -->
+            <div class="content__item">
+              <h2>Обо мне</h2>
+              <p>
+                Мне 23 года. Занимаюсь вёрсткой с 2019 года
+                (HTML/CSS/JavaScript).
+              </p>
+              <p>
+                В настоящие дни, я сфокусирован на улучшении
+                своих навыков и двигаюсь в сторону
+                Фронтенд-разработчика. Изучаю Vue.js.
+              </p>
+              <p>
+                Быстро вникаю в новые технологии, умею
+                решать задачи независимо от их сложности.
+              </p>
+            </div>
+            <!-- /About -->
+            <!-- Contacts -->
+            <div class="row row--spacing">
+              <div class="content__item row__item row__item--50">
+                <h3>Контакты</h3>
+                <ul>
+                  <li>
+                    github:
+                    <a href="https://github.com/nmasliy" rel="noopener noreferrer" target="_blank">@nmasliy</a>
+                  </li>
+                  <li>
+                    email:
+                    <a href="mailto:nikolaymasliy76@gmail.com" rel="noopener noreferrer"
+                      target="_blank">nikolaymasliy76@gmail.com</a>
+                  </li>
+                  <li>
+                    telegram:
+                    <a href="https://t.me/nmasliy" rel="noopener noreferrer" target="_blank">@nmasliy</a>
+                  </li>
                 </ul>
-                <div class="header__btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </header>
-        <!-- /Header -->
+              </div>
+              <!-- Skills -->
+              <div class="content__item row__item row__item--50">
+                <h3>Навыки</h3>
+                <ul>
+                  <li>
+                    HTML, CSS, BEM, Gulp
+                    (<i>Продвинутый</i>)
+                  </li>
+                  <li>
+                    JavaScript ES6+ (<i>Средний</i>)
+                  </li>
+                  <li>
+                    React, React Native, Vue
+                    (<i>Базовый</i>)
+                  </li>
+                  <li>Git(<i>Базовый</i>)</li>
+                </ul>
+              </div>
+              <!-- /Skills -->
+            </div>
+            <!-- /Contacts -->
+          </div>
+          <div class="row__item row__img">
+            <picture>
+              <source srcset="assets/images/avatar.webp" media="(min-width:466px)" type="image/webp" />
+              <source srcset="assets/images/avatar-mob.webp" media="(max-width:465px)" type="image/webp" />
+              <source srcset="assets/images/avatar-mob.jpg" media="(max-width:465px)" />
+              <img width="250" class="content__img" src="assets/images/avatar.jpg" alt="Николай Маслий" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- /Head section -->
 
-        <!-- Main content -->
-        <main>
-            <!-- Head section -->
-            <section class="hero">
-                <div class="anchor-spacer" id="hero"></div>
-                <h1>Николай Маслий</h1>
-                <div class="content__item row hero__item">
-                    <div class="row__item row__text">
-                        <!-- About -->
-                        <div class="content__item">
-                            <h2>Обо мне</h2>
-                            <p>
-                                Мне 22 года. Я занимаюсь вёрсткой с 2019 года (HTML/CSS/JavaScript).
-                            </p>
-                            <p>
-                                В настоящие дни, я сфокусирован на улучшении своих навыков и двигаюсь в сторону Фронтенд-разработчика.
-                            </p>
-                            <p>
-                                Быстро вникаю в новые технологии, умею решать задачи независимо от их сложности.
-                            </p>
-                        </div>
-                        <!-- /About -->
-                        <!-- Contacts -->
-                        <div class="row row--spacing">
-                            <div class="content__item row__item row__item--50">
-                                <h3>Контакты</h3>
-                                <ul>
-                                    <li>github: <a href="https://github.com/nmasliy" rel="noopener noreferrer" target="_blank">@nmasliy</a></li>
-                                    <li>email: <a href="mailto:nikolaymasliy76@gmail.com" rel="noopener noreferrer" target="_blank">nikolaymasliy76@gmail.com</a></li>
-                                    <li>telegram: <a href="https://t.me/nmasliy" rel="noopener noreferrer" target="_blank">@nmasliy</a></li>
-                                </ul>
-                            </div>
-                            <!-- Skills -->
-                            <div class="content__item row__item row__item--50">
-                                <h3>Навыки</h3>
-                                <ul>
-                                    <li>HTML, CSS, BEM, Gulp (<i>Продвинутый</i>)</li>
-                                    <li>JavaScript ES6+ (<i>Средний</i>)</li>
-                                    <li>React (<i>Базовый</i>)</li>
-                                    <li>Git(<i>Базовый</i>)</li>
-                                </ul>
-                            </div>
-                        <!-- /Skills -->
-                        </div>
-                        <!-- /Contacts -->
-                    </div>
-                    <div class="row__item row__img">
-                        <picture>
-                            <source srcset="assets/images/avatar.webp" media="(min-width:466px)" type="image/webp">
-                            <source srcset="assets/images/avatar-mob.webp" media="(max-width:465px)" type="image/webp">
-                            <source srcset="assets/images/avatar-mob.jpg" media="(max-width:465px)">
-                            <img width="250" class="content__img" src="assets/images/avatar.jpg" alt="Николай Маслий">
-                        </picture>
-                    </div>
-                </div>
-            </section>
-            <!-- /Head section -->
-
-            <!-- Code example -->
-            <section class="code">
-                <div class="anchor-spacer" id="code"></div>
-                <div class="content__item">
-                    <h3>Пример кода:</h3>
-                    <pre>
+      <!-- Code example -->
+      <section class="code">
+        <div class="anchor-spacer" id="code"></div>
+        <div class="content__item">
+          <h3>Пример кода:</h3>
+          <pre>
         <code class="language-javascript">
 export const initializeApp = () => {
-    const defaultCity = 'London';
+  const defaultCity = 'London'
 
-    return (dispatch) => {
-        const cities = JSON.parse(window.localStorage.getItem('cities')) || null;
+  return (dispatch) => {
+    const cities = JSON.parse(window.localStorage.getItem('cities')) || null
 
-        if (cities) {
-            cities.forEach(item => {
-                dispatch(addCity(item.name));
-            });
-            dispatch(pickCity(cities[0].name))
-                .then(() => {
-                    dispatch(initializingSuccess());
-                });
-        }
-        else API.getUserCity()
-            .then(city => dispatch(initializeCity(city)))
-            .catch(() => dispatch(initializeCity(defaultCity)))
+    if (cities) {
+      cities.forEach(item => dispatch(addCity(item.name)))
+      dispatch(pickCity(cities[0].name))
+        .then(() => dispatch(initializingSuccess()))
     }
-};
+    else API.getUserCity()
+      .then(city => dispatch(initializeCity(city)))
+      .catch(() => dispatch(initializeCity(defaultCity)))
+  }
+}
         </code>
                     </pre>
-                    <div>
-                        <h5>Код из
-                            <a href="https://nmasliy.github.io/react-weather-app/" rel="noopener noreferrer" target="_blank">Прогноз погоды на React</a>
-                        </h5>
-                    </div>
-                </div>
-            </section>
-            <!-- /Code example -->
+          <div>
+            <h5>
+              Код из
+              <a href="https://nmasliy.github.io/react-weather-app/" rel="noopener noreferrer" target="_blank">Прогноз
+                погоды на React</a>
+            </h5>
+          </div>
+        </div>
+      </section>
+      <!-- /Code example -->
 
-            <!-- Experience -->
-            <section class="experience">
-                <div class="anchor-spacer" id="experience"></div>
-                <div class="content__item">
-                    <h3>Опыт работы:</h3>
-                    <p>
-                        С 2020 года работаю на фрилансе, а так же с постоянными заказчиками. 
-                    </p>
-                    <p>
-                        В конце 2021 года начал сотрудничество с компанией на попроектной основе.
-                    </p>
-                    <h4>Проекты:</h4>
-                    <ul>
-                        <li><a href="https://trends2021.werox.co.il/" rel="noopener noreferrer" target="_blank">https://trends2021.werox.co.il/</a> - студия дизайна</li>
-                        <li><a href="https://www.myskin.ua/" rel="noopener noreferrer" target="_blank">https://www.myskin.ua/</a> - медицинский центр</li>
-                        <li><a href="https://saldoinvoice.com/" rel="noopener noreferrer" target="_blank">https://saldoinvoice.com/</a> - онлайн генератор счетов</li>
-                        <li><a href="https://gorodskayapoverka.ru/" rel="noopener noreferrer" target="_blank">https://gorodskayapoverka.ru/</a> - поверка счётчиков</li>
-                        <li><a href="https://vmkl1.com/" rel="noopener noreferrer" target="_blank">https://vmkl1.com/</a> - городская клиника</li>
-                        <li><a href="https://pharma4you.ru/" rel="noopener noreferrer" target="_blank">https://pharma4you.ru/</a> - онлайн магазин медицинских препаратов</li>
-                        <li><a href="https://bevert.ru/" rel="noopener noreferrer" target="_blank">https://bevert.ru/</a> - консалтинг по недвижимости</li>
-                    </ul>
-                </div>
-            </section>
-            <!-- /Experience -->
+      <!-- Experience -->
+      <section class="experience">
+        <div class="anchor-spacer" id="experience"></div>
+        <div class="content__item">
+          <h3>Опыт работы:</h3>
+          <p>
+            С 2020 года работаю на фрилансе, с постоянными
+            заказчиками напрямую, а так же с компаниями на проектной
+            основе. За это время выполнл более 70 проектов.
+          </p>
+          <ul>
+            <li>Адаптивная вёрстка сайтов по макету</li>
+            <li>Внесение правок в работающие проекты на CMS</li>
+            <li>Доработка готовых проектов</li>
+            <li>Вёрстка интерфейсов Mobile First</li>
+            <li>Оптимизация скорости загрузки</li>
+            <li>
+              Добавление кастомных JavaScript и CSS анимаций
+              на сайт
+            </li>
+          </ul>
+          <h4>Имел опыт работы с:</h4>
+          <ul>
+            <li>Pug, SASS</li>
+            <li>Bootstrap, Pixel Perfect</li>
+            <li>Анимация(CSS, SVG, JS), CSS keyframes</li>
+            <li>Микроразметка</li>
+            <li>AJAX, Jquery, Axios</li>
+            <li>Adobe XD, Adobe Photoshop, Adobe Illustrator, Zeplin, Figma</li>
+            <li>Trello, Jira, Worksection</li>
+          </ul>
+          <h4>Проекты:</h4>
+          <ul>
+            <li>
+              <a href="https://trends2021.werox.co.il/" rel="noopener noreferrer"
+                target="_blank">https://trends2021.werox.co.il/</a>
+              - студия дизайна
+            </li>
+            <li>
+              <a href="https://www.myskin.ua/" rel="noopener noreferrer" target="_blank">https://www.myskin.ua/</a>
+              - медицинский центр
+            </li>
+            <li>
+              <a href="https://saldoinvoice.com/" rel="noopener noreferrer"
+                target="_blank">https://saldoinvoice.com/</a>
+              - онлайн генератор счетов
+            </li>
+            <li>
+              <a href="https://gorodskayapoverka.ru/" rel="noopener noreferrer"
+                target="_blank">https://gorodskayapoverka.ru/</a>
+              - поверка счётчиков
+            </li>
+            <li>
+              <a href="https://vmkl1.com/" rel="noopener noreferrer" target="_blank">https://vmkl1.com/</a>
+              - городская клиника
+            </li>
+            <li>
+              <a href="https://nmasliy.github.io/stihiya/dist/" rel="noopener noreferrer" target="_blank">https://pharma4you.ru/</a>
+              - лендинг ко дню космонавтики
+            </li>
+            <li>
+              <a href="https://bevert.ru/" rel="noopener noreferrer" target="_blank">https://bevert.ru/</a>
+              - консалтинг по недвижимости
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /Experience -->
 
-            <!-- Education -->
-            <section class="education">
-                <div class="anchor-spacer" id="education"></div>
-                <div class="content__item">
-                    <h3>Образование</h3>
-                    <p>
-                        Я окончил колледж по специальности "Техник-программист". Сейчас я учусь на последнем курсе в университете по схожей специальности.
-                        Но большую часть моих знаний составляют видео на Youtube и бесплатные курсы.
-                    </p>
-                    <h4>Самообразование</h4>
-                    <p>
-                        После самостоятельного изучения вёрстки около 8-ми месяцев, стал фрилансером.
-                    </p>
-                    <p>
-                        Затем продолжал работать, сделал перерыв и начал изучать React(Redux) 2 месяца по Youtube курсу:  <a href="https://www.youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8" rel="noopener noreferrer" target="_blank">React-Samurai</a>.
-                    </p>
-                    <p>
-                        После месяцев изучения, я начал практиковаться и создал  <a href="https://github.com/nmasliy/react-weather-app" rel="noopener noreferrer" target="_blank">Погодное приложение</a>.
-                    </p>
-                    <p>
-                        Помимо самого фреймворка, я научился работе с сервером(AJAX), промисам и прочим вещам, которые до этого я не мог понять. Я узнал более подробно об архитектуре проекта и другим фундаментальным вещам.
-                    </p>
-                    <p>
-                        Сейчас вернулся к улучшению навыков в вёрстке.
-                    </p>
-                </div>
-            </section>
-            <!-- /Education -->
+      <!-- Education -->
+      <section class="education">
+        <div class="anchor-spacer" id="education"></div>
+        <div class="content__item">
+          <h3>Образование</h3>
+          <p>
+            Я окончил Лисаковский технический колледж по
+            специальности "Техник-программист" в 2019 году. В
+            2022 году окончил Костанайский
+            инженерно-экономический университет и получил
+            степень бакалавра в области
+            информационно-коммуникационных технологий. Большое
+            количество знаний и полезной информации я черпаю из
+            видео на Youtube, бесплатных курсов и статей.
+          </p>
+          <h4>Самообразование</h4>
+          <p>
+            После самостоятельного изучения вёрстки около 8-ми
+            месяцев, стал фрилансером.
+          </p>
+          <p>
+            Затем продолжал работать. Когда понял, что стою на месте, решил сделать перерыв и начал
+            изучать React(Redux) 2 месяца по Youtube курсу:
+            <a href="https://www.youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8" rel="noopener noreferrer"
+              target="_blank">React-Samurai</a>.
+          </p>
+          <p>
+            После месяцев изучения, я начал практиковаться и
+            создал
+            <a href="https://github.com/nmasliy/react-weather-app" rel="noopener noreferrer" target="_blank">Погодное
+              приложение</a>.
+          </p>
+          <p>
+            Помимо самого фреймворка, я научился работе с
+            сервером(AJAX), промисам и прочим вещам, которые до
+            этого я не мог понять. Я узнал более подробно об
+            архитектуре проекта и другим фундаментальным вещам.
+          </p>
+          <p>Затем вернулся к работе и улучшению навыков в вёрстке и JavaScript.</p>
+          <p>В данный момент изучаю фреймворк Vue.js.</p>
+        </div>
+      </section>
+      <!-- /Education -->
 
-            <!-- English -->
-            <section class="english">
-                <div class="content__item">
-                    <div class="anchor-spacer" id="english"></div>
-                    <h3>Английский</h3>
-                    <p>
-                        Мой примерный уровень знания английского: Pre-Intermediate <i>(A2)</i>. Не очень хорошо разбираю разговорную речь, но могу читать технические статьи и понимать большую их часть. 
-                    </p>
-                    <p>
-                        Я стараюсь гуглить, читать документацию и использовать приложения только на английском языке.
-                    </p>
-                </div>
-            </section>
-            <!-- /English -->
-        </main>
-        <!-- /Main content -->
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="row footer__content">
-                <a class="footer__link" href="https://github.com/nmasliy" rel="noopener noreferrer" target="_blank">
-                    <img src="assets/images/github.svg" alt="Github">
-                    <span>nmasliy</span>
-                </a>
-                <div class="footer__date">2022</div>
-            </div>
-        </footer>
-        <!-- /Footer -->
+      <!-- English -->
+      <section class="english">
+        <div class="content__item">
+          <div class="anchor-spacer" id="english"></div>
+          <h3>Английский</h3>
+          <p>
+            Мой примерный уровень знания английского:
+            Pre-Intermediate <i>(A2)</i>. Не очень хорошо
+            разбираю разговорную речь, но могу читать
+            технические статьи и понимать большую их часть.
+          </p>
+          <p>
+            Я стараюсь гуглить, читать документацию и
+            использовать приложения только на английском языке.
+          </p>
+        </div>
+      </section>
+      <!-- /English -->
+    </main>
+    <!-- /Main content -->
 
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row footer__content">
+        <a class="footer__link" href="https://github.com/nmasliy" rel="noopener noreferrer" target="_blank">
+          <img src="assets/images/github.svg" alt="Github" />
+          <span>nmasliy</span>
+        </a>
+        <div class="footer__date">2022</div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+  </div>
 
-    <!-- Main scripts -->
-    <script src="assets/js/app.js"></script>
-    <!-- /Main scripts -->
+  <!-- Main scripts -->
+  <script src="assets/js/app.js"></script>
+  <!-- /Main scripts -->
 
-    <!-- Libs -->
-    <!-- Highlight with prism.js -->
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-core.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.min.js"></script>
-    <!-- /Highlight with prism.js -->
-    <!-- /Libs -->
-
+  <!-- Libs -->
+  <!-- Highlight with prism.js -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/prism.min.js"></script>
+  <!-- /Highlight with prism.js -->
+  <!-- /Libs -->
 </body>
+
 </html>
