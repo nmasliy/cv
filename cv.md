@@ -5,7 +5,7 @@
 * telegram: [@nmasliy](https://t.me/nmasliy)
 
 ## __About me__
-I'm 22 years old. I have 2 years of experience in HTML/CSS coding (Basic JavaScript, Jquery). Nowadays, i focused on improving Javascript and React skills to become a Frontend developer. 
+I'm 23 years old. I have 2 years of experience in HTML/CSS coding (Basic JavaScript, Jquery). Nowadays, i focused on improving Javascript and React skills to become a Frontend developer. 
 
 ## __My skills__
 * HTML, CSS, BEM, Gulp (Advanced)
